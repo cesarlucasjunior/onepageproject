@@ -1,154 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
 body {
-    background: url(../img/img_computador.jpg) no-repeat center top fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    background-blend-mode: multiply;
+    background-color: lightslategray;
+    background-image: url('../img/img_computador.jpg');
     background-size: cover;
-
+    height: 100vh;
 }
-.menu {
-    position: absolute;
-    top: 10px;
-    left: 50%;
-    width: 900px;
-    padding: 20px;
-    margin-left: -300px;    
+.menu-principal {
+    border: 1px solid black;
+    height: 100px;
 }
-ul {
-    margin-top: 10px;
-    padding: 0px;
-    list-style:none;
-
+main,.content {
+    margin: 0 auto;
+    width: 1800px;
 }
-
-ul li {
+.logo h1 {
+    color: #ffffff;
     float: left;
-    margin-right: 30px;
+    padding: 40px;
+    width: 20%;
+}
+.navegacao ul {
+    display: flex;
+    float:left;
+    justify-content: space-around;
+    list-style-type: none;
+    padding:45px;
+    width:50%;
+}
+.lista li{
+    color: #ffffff7e;
+    height: 40px;
 
 }
-ul a {
-    padding: 30px;
-    text-decoration: none;  
-    color:rgb(255, 255, 255);
+.lista li:hover{
+    border-bottom:1px solid #ffffff;
+}
+.lista li a {
+    color: #ffffff7e;
+    font-size: 20px;
+    text-decoration: none;
+}
+.lista li a:hover{
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.botao1 {
+    width: 10%;
+    padding: 35px;
+    float: right;
+}
+.button1 {
+    background-color: blueviolet;
+    border: none;
+    border-radius: 3rem;
+    color: #ffffff;
+    padding: 15px;
+    font-weight: 900;
+}
+.button1:hover {
+    background-color: rgb(177, 97, 252);
+    transition: 1s;
+    border: none;
+    border-radius: 3rem;
+    color: #ffffff;
+    padding: 15px;
+    font-weight: 900;
 }
 .conteudo1 {
-    position: absolute;
-    width: 700px;
-    padding: 100px; 
-    top: 470px;
-    margin-left:140px ;
     float: left;
+    margin-top: 30em;
+    margin-left: 10em;
+    width: 35%;
+    height: 35%;
 }
-h1 {
-    margin-bottom: 40px;
-    color:rgb(255, 255, 255);
+.conteudo1 h1{
+    color: #ffffff;
+    font-size: 40px;
+    
 }
-h2 {
-    position: absolute;
-    top: 10px;
-    width: 90px;
-    padding: 20px;
-    float: left;
-    margin-left: 120px;
-    color:rgb(255, 255, 255);
+.conteudo1 h3{
+    color: rgba(255, 255, 255,0.2);
+    margin-top: 5%;
 }
-p {
-    color:rgb(255, 255, 255,0.6);
+.botao2 {
+    margin-top: 35px;
+    margin-left: 10px;
 }
-.area-login {
-    position: absolute;
-    width: 550px;
-    height: 480px;
+.button2 {
+    background-color: blueviolet;
+    border: none;
+    border-radius: 3rem;
+    color: #ffffff;
     padding: 15px;
-    top: 470px;
-    border-radius: 10px;
-    margin-left:1290px ;
-    float: left;
-    background-color: #fff;
-
+    font-weight: 900;
 }
-.area-login h2{
-    width: 300px;
-    margin-top: 10px;
-    margin-left: 3px;
-    color: black;
-}
-#email{
-    padding: 10px;
-    margin-top: 100px;
-    margin-bottom: 20px;
-    margin-left: 30px;
-    width: 450px;
-}
-#senha{
-    padding: 10px;
-    margin-bottom: 20px;
-    margin-left: 30px;
-    width: 450px;
-}
-#senha1{
-    padding: 10px;
-    margin-bottom: 20px;
-    margin-left: 30px;
-    width: 450px;
-}
-.buttom{
-    width: 500px;
-}
-.botao-arredondado1{
-    padding: 20px 60px;
-    color: #fff;
-    border-radius:5em ;
-    background-color: rgb(148, 51, 218);
-    border: none;
-    font-weight: 600;
-    margin-top: 30px;
-}
-.botao-arredondado1:hover{
-    padding: 20px 60px;
-    color: #fff;
-    border-radius:5em ;
-    background-color: rgb(161, 66, 230);
-    border: none;
-    transition: 1s;
-    font-weight: 600;
-}
-.botao-arredondado2{
-    margin-left: 20px;
-    padding: 20px 40px;
-    color: #fff;
-    border-radius:5em ;
-    background-color: rgb(148, 51, 218);
-    border: none;
-    font-weight: 600;
-}
-.botao-arredondado2:hover{
-    margin-left: 20px;
-    padding: 20px 40px;
-    color: #fff;
-    border-radius:5em ;
-    background-color: rgb(161, 66, 230);
+.button2:hover {
+    background-color: rgb(177, 97, 252);
     transition: 1s;
     border: none;
-    font-weight: 600;
+    border-radius: 3rem;
+    color: #ffffff;
+    padding: 15px;
+    font-weight: 900;
 }
-.botao-arredondado3{
-    margin-right: 200px;
-    margin-top:35px;
+.caixa-login {
+    margin-top: 25em;
+    margin-right: 20em;
+    width: 350px;
+    height: 300px;
+    padding: 40px;
     float: right;
-    padding: 15px 60px;
-    color: #fff;
-    border-radius:5em ;
-    background-color: rgb(148, 51, 218);
-    border: none;
-    font-weight: 600;
+    background-color: #ffffffff;
+    border-radius: 0.5em;
 }
-.botao-arredondado3:hover{
-    padding: 15px 60px;
-    color: #fff;
-    border-radius:5em ;
-    background-color: rgb(161, 66, 230);
+.titulo{ 
+    color: #000000a9;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+input {
+    height: 35px;
+    width: 95%;
+    margin-bottom: 15px;
+    padding: 5px;
+}
+.botao3 {
+    margin-top: 10px;
+}
+.button3 {
+    background-color: blueviolet;
     border: none;
+    border-radius: 3rem;
+    color: #ffffff;
+    width: 120px;
+    padding: 13px;
+    font-weight: 900;
+}
+.button3:hover {
+    background-color: rgb(177, 97, 252);
     transition: 1s;
-    font-weight: 600;
+    border: none;
+    border-radius: 3rem;
+    color: #ffffff;
+    padding: 15px;
+    font-weight: 900;
 }
+
+
